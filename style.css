@@ -53,6 +53,115 @@ body{
 }
 
 /* ================================================================================================== */
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 90px 20px;
+}
+
+.header .exculsive{
+    font-size: 22px;
+}
+
+.header .nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 32%;
+}
+
+.header .nav a{
+    color: black;
+    text-decoration: none;
+    transition: all 0.8s ease-in-out;
+    font-weight: bold;
+}
+
+.header .nav a:hover{
+    color: #00B8D9;
+    transform: scale(1.1);
+}
+
+.header .nav a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0%;
+    height: 2px;
+    background-color: #00B8D9;
+    transition: width 0.3s ease;
+}
+
+.header .nav a:hover::after{
+    width: 100%;
+}
+
+.header .search{
+    display: flex;
+    align-items: center;
+}
+
+.header .search .input{
+    width: 350px;
+    height: 40px;
+    padding: 0px 15px;
+    background-color: rgba(245, 245, 245, 1);
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.header .search .input input{
+    width: 100%;
+    border: none;
+    font-weight: 400;
+    font-size: 18px;
+    background-color: rgba(245, 245, 245, 1);
+}
+
+.header .search .input input:focus{
+    outline: none;
+}
+
+.header .search .input input::placeholder{
+    color: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+}
+
+.header .search .input i{
+    font-size: 20px;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all 0.4s ease-in-out;
+}
+
+.header .search .input i:hover{
+    color: #00B8D9;
+}
+
+.header .search .like{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 22px;
+    cursor: pointer;
+    padding: 0px 5px 0px 5px;
+}
+
+.header .search .like i{
+    transform: scale(1.1);
+    transition: all 0.4s ease-in-out;
+}
+
+.header .search .like i:hover{
+    color: #00B8D9;
+}
+
+/* ================================================================================================== */
 
 .card-section{
     display: flex;
@@ -222,6 +331,15 @@ body{
    .head .summer-sale {
         width: 80%;
     }
+    .header{
+        padding: 40px 60px 20px;
+    }
+    .header .search .input {
+        width: 310px;
+    }
+    .card-section {
+        padding: 100px 60px;
+    }
     .card-section .card .upper{
         height: 210px;
     }
@@ -231,7 +349,7 @@ body{
 }
 
 @media screen and (max-width: 1199px){
-      .head {
+    .head {
         padding-left: 100px;
     }
    .head .summer-sale {
@@ -245,6 +363,15 @@ body{
     }
     .head .language-dropdown select {
         font-size: 16px;
+    }
+    .header .exculsive {
+    font-size: 18px;
+    }
+    .header .nav {
+        width: 30%;
+    }
+    .header .search .input {
+        width: 290px;
     }
     .card-section {
         padding: 50px;
@@ -274,6 +401,15 @@ body{
     .head .language-dropdown select{
         padding: 2px;
         font-size: 14px;
+    }
+    .header {
+        flex-wrap: wrap;
+    }
+    .header .nav {
+        width: 50%;
+    }
+    .header .search {
+        padding-top: 20px;
     }
     .card-section {
         align-items: stretch;
@@ -307,6 +443,28 @@ body{
         padding: 2px;
         font-size: 12px;
     }
+    .header .exculsive {
+        font-size: 16px;
+    }
+    .header .nav {
+        width: 55%;
+    }
+    .header .nav a {
+        font-weight: 400px;
+        font-size: 14px;
+    }
+    .header .search .like {
+        font-size: 18px;
+    }
+    .header .search .input {
+        height: 30px;
+    }
+    .header .search .input input {
+        font-size: 16px;
+    }
+    .header .search .input i {
+        font-size: 18px;
+    }
     .card-section {
         padding: 30px;
     }
@@ -334,6 +492,27 @@ body{
         gap: 5px;
         flex-wrap: wrap;
     }
+    .header .exculsive {
+        font-size: 12px;
+    }
+    .header .nav {
+        width: 60%;
+    }
+    .header .nav a{
+        font-size: 11px;
+    }
+    .header {
+        padding: 40px 20px 20px;
+    }
+    .header .search .input i {
+        font-size: 16px;
+    }
+    .header .search .like {
+        font-size: 16px;
+    }
+    .header .search .input input {
+        font-size: 14px;
+    }
     .card-section{
         padding: 10px;
         gap: 20px;
@@ -342,3 +521,5 @@ body{
         max-width: 45%;
     }    
 }
+
+
