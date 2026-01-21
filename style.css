@@ -164,11 +164,157 @@ body{
 
 /* ================================================================================================== */
 
+.apple{
+    margin: 40px 150px 90px 150px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.apple .apple-text{
+    padding: 40px 0px 40px 40px;
+    color: white;
+}
+
+.apple .apple-text .apple-logo{
+    width: 210px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.apple .apple-text .apple-logo p{
+    font-weight: 500;
+    font-size: 18px;
+    padding-top: 7px;
+}
+
+.apple .apple-text h1{
+    padding: 30px 0px;
+    line-height: 60px;
+    font-size: 45px;
+    letter-spacing: 4%;
+}
+
+.apple .apple-text a{
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: all 0.4s ease-in-out;
+    text-align: center;
+}
+
+.apple .apple-text a:hover{
+    color: #00B8D9;
+}
+
+.apple .img img{
+    width: 470px;
+    padding: 20px;
+}
+
+/* ================================================================================================== */
+
+.section1{
+    padding: 0px 90px;
+}
+
+.section1 .today{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.section1 .today .block{
+    padding: 20px 10px;
+    border-radius: 4px;
+    background-color: rgba(219, 68, 68, 1);
+}
+
+.section1 .today p{
+    color: rgba(219, 68, 68, 1);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.section1 .flash{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 20px;
+}
+
+.section1 .flash .heading h2{
+    font-weight: 600px;
+    font-size: 36px;
+    letter-spacing: 4%;
+}
+
+.section1 .flash .time{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    position: relative;
+    right: 250px;
+    bottom: 5px;
+}
+
+.section1 .flash .time .times p{
+    font-weight: bold;
+    font-size: 14px;
+    padding: 5px;
+}
+
+.section1 .flash .time .times h2{
+    font-weight: 700px;
+    font-size:  32px;
+    line-height: 30px;
+    padding-left: 6px;
+}
+
+.section1 .flash .time .colon{
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: rgba(219, 68, 68, 1);
+}
+
+.section1 .flash .arrow{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    width: 110px;
+}
+
+.section1 .flash .arrow i{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(128, 128, 128, 0.2);
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.section1 .flash .arrow i:hover{
+    color: #00B8D9;
+}
+
+/* /============================================================================================================= */
+
 .card-section{
     display: flex;
     align-items: center;
     gap: 30px;
-    padding: 100px 90px;
+    padding: 50px 90px;
     flex-wrap: wrap;
 }
 
@@ -196,6 +342,16 @@ body{
     top: 10px;
     left: 10px;
     background-color: rgba(0, 255, 102, 1);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+.card-section .card .upper .discount{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(219, 68, 68, 1);
     color: white;
     padding: 5px 15px;
     border-radius: 5px;
@@ -283,6 +439,20 @@ body{
     font-weight: bold;
 }
 
+.card-section .card .lower .price1{
+    padding-top: 10px;
+    color: rgba(219, 68, 68, 1);
+    font-weight: bold;
+    word-spacing: 10px;
+    font-size: 18px;
+}
+
+.card-section .card .lower .price1 span{
+    text-decoration: line-through;
+    color: gray;
+    font-size: 14px;
+}
+
 .card-section .card .lower .ratings-line .star-icons{
     color: rgba(255, 173, 51, 1);
 }
@@ -305,12 +475,48 @@ body{
     cursor: pointer ;
 }
 
-/* ================================================================================================== */
+/* ========================================================================================= */
+
+.product{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+}
+
+.product a{
+    padding: 15px 35px;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 18px;
+    background-color: rgba(219, 68, 68, 1);
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    transition: all 0.5s ease-in-out;
+    text-align: center;
+    align-content: center;
+}
+
+.product a:hover{
+    background-color: white;
+    color: rgb(219, 68, 68);
+    border: 2px solid rgb(219, 68, 68);
+}
+
+
+
+/* ======================================================================================= */
+
 
 @media screen and (max-width: 1920px){
     .head .summer-sale {
         width: 65%;
     }
+    .section1 .flash .time {
+        right: 200px;
+    }  
 }
 
 @media screen and (max-width: 1660px){
@@ -322,6 +528,12 @@ body{
     }
     .head .language-dropdown select {
         font-size: 16px;
+    }
+    .apple {
+    margin: 40px 120px 90px 120px;
+    }
+    .section1 .flash .time {
+        right: 80px;
     }
 }
 
@@ -337,6 +549,18 @@ body{
     }
     .header .search .input {
         width: 310px;
+    }
+     .apple .img img {
+        width: 420px;
+    }
+    .section1 .flash .time {
+        right: 50px;
+    }
+    .section1 .flash .time {
+        gap: 32px;
+    }
+    .section1 .flash .heading h2 {
+        letter-spacing: 4%;
     }
     .card-section {
         padding: 100px 60px;
@@ -373,6 +597,26 @@ body{
     }
     .header .search .input {
         width: 290px;
+    }
+    .apple {
+        margin: 40px 100px 90px 100px;
+    }
+    .apple .apple-text h1 {
+        padding: 20px 0px;
+        line-height: 50px;
+        font-size: 40px;
+    }
+    .apple .img img {
+        width: 380px;
+    }
+    .section1 .flash .heading h2 {
+        font-size: 30px;
+        letter-spacing: 0%;
+    }
+    .section1 .flash .time {
+        bottom: 6px;
+        gap: 26px;
+        right: 15px;
     }
     .card-section {
         padding: 50px;
@@ -412,6 +656,67 @@ body{
     .header .search {
         padding-top: 20px;
     }
+    .apple {
+        margin: 40px 60px 90px 60px;
+    }
+    .apple .apple-text .apple-logo {
+        width: 150px;
+    }
+    .apple .apple-text .apple-logo img{
+        width: 30px;
+    }
+    .apple .apple-text .apple-logo p {
+        font-weight: 400;
+        font-size: 14px;
+    }
+    .apple .apple-text h1 {
+        line-height: 40px;
+        font-size: 32px;
+    }
+    .apple .img img {
+        width: 340px;
+    }
+    .apple .apple-text a {
+        font-size: 16px;
+    }
+     .apple .apple-text i {
+        font-size: 12px;
+    }
+    .section1 {
+        padding: 100px 60px;
+    }
+    .section1 .today .block {
+        padding: 17px 8px;
+    }
+    .section1 .flash .time {
+        gap: 12px;
+        right: 0px;
+    }
+    .section1 .flash .heading h2 {
+        font-size: 24px;
+    }
+    .section1 .flash .time .times h2 {
+        font-weight: 400px;
+        font-size: 20px;
+        line-height: 0px;
+        padding-left: 14px;
+    }
+    .section1 .flash .time .times p {
+        font-weight: bold;
+        font-size: 12px;
+        padding: 10px;
+    }
+    .section1 .flash .time {
+        bottom: 10px;
+    }
+    .section1 .flash .arrow i {
+        width: 30px;
+        height: 30px;
+        font-size: 12px;
+    }
+    .section1 .flash .arrow {
+        width: 70px;
+    }
     .card-section {
         align-items: stretch;
         padding: 50px;
@@ -427,6 +732,10 @@ body{
     }
     .card-section .card .upper .image img {
         max-width: 50%;
+    }
+    .product a {
+        padding: 15px 25px;
+        font-size: 16px;
     }
 }
 
@@ -466,6 +775,51 @@ body{
     .header .search .input i {
         font-size: 18px;
     }
+     .apple .apple-text{
+        padding: 20px 0px 20px 20px;
+        color: white;
+    }
+    .apple .apple-text .apple-logo {
+        width: 120px;
+    }
+    .apple .apple-text .apple-logo img{
+        width: 20px;
+    }
+    .apple .apple-text .apple-logo p {
+        font-weight: lighter;
+        font-size: 12px;
+    }
+    .apple .apple-text h1 {
+        padding-top: 10px;
+        padding-bottom: 20px;
+        line-height: 35px;
+        font-size: 24px;
+    }
+    .apple .apple-text a {
+        font-size: 12px;
+    }
+     .apple .apple-text i {
+        font-size: 10px;
+    }
+    .apple .img img {
+        width: 273px;
+        padding-top: 20px;
+    }
+    .section1{
+            padding: 100px 30px 100px 30px;
+    }
+    .section1 .flash .heading h2 {
+        font-size: 22px;
+    }
+    .section1 .flash .time .times p {
+        font-size: 10px;
+    }
+    .section1 .flash .time .times h2 {
+        font-size: 18px;
+    }
+        .section1 .flash .arrow i {
+        font-size: 10px;
+    }
     .card-section {
         padding: 30px;
     }
@@ -478,6 +832,13 @@ body{
     }
     .card-section .card .upper .new p{
         font-size: 12px;
+    }
+    .section1 .flash .arrow {
+        display: none;
+    }
+    .product a {
+        padding: 12px 22px;
+        font-size: 14px;
     }
 }
 
@@ -521,164 +882,10 @@ body{
     .header .search .input input {
         font-size: 14px;
     }
-    .card-section{
-        padding: 10px;
-        gap: 20px;
-    }
-    .card-section .card .upper .image img {
-        max-width: 45%;
-    }    
-}
-
-
-/* =============================================/==================================================== */
-
-.apple{
-    margin: 40px 150px 90px 150px;
-    background-color: black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    overflow: hidden;
-}
-
-.apple .apple-text{
-    padding: 40px 0px 40px 40px;
-    color: white;
-}
-
-.apple .apple-text .apple-logo{
-    width: 210px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.apple .apple-text .apple-logo p{
-    font-weight: 500;
-    font-size: 18px;
-    padding-top: 7px;
-}
-
-.apple .apple-text h1{
-    padding: 30px 0px;
-    line-height: 60px;
-    font-size: 45px;
-    letter-spacing: 4%;
-}
-
-.apple .apple-text a{
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: all 0.4s ease-in-out;
-    text-align: center;
-}
-
-.apple .apple-text a:hover{
-    color: #00B8D9;
-}
-
-.apple .img img{
-    width: 470px;
-    padding: 20px;
-}
-
-/* ======================================================================================= */
-
-@media screen and (max-width: 1660px){
-    .apple {
-    margin: 40px 120px 90px 120px;
-}
-}
-
-@media screen and (max-width: 1399px){
-   .apple .img img {
-        width: 420px;
-   }
-}
-
-@media (max-width: 1199px) {
-    .apple {
-        margin: 40px 100px 90px 100px;
-    }
-    .apple .apple-text h1 {
-        padding: 20px 0px;
-        line-height: 50px;
-        font-size: 40px;
-    }
-    .apple .img img {
-        width: 380px;
-    }
-}
-
-@media (max-width: 991px) {
-    .apple {
-        margin: 40px 60px 90px 60px;
-    }
-    .apple .apple-text .apple-logo {
-        width: 150px;
-    }
-    .apple .apple-text .apple-logo img{
-        width: 30px;
-    }
-    .apple .apple-text .apple-logo p {
-        font-weight: 400;
-        font-size: 14px;
-    }
-    .apple .apple-text h1 {
-        line-height: 40px;
-        font-size: 32px;
-    }
-    .apple .img img {
-        width: 340px;
-    }
-    .apple .apple-text a {
-        font-size: 16px;
-    }
-     .apple .apple-text i {
-        font-size: 12px;
-    }
-}
-
-@media (max-width: 767px) {
-    .apple .apple-text{
-        padding: 20px 0px 20px 20px;
-        color: white;
-    }
-    .apple .apple-text .apple-logo {
-        width: 120px;
-    }
-    .apple .apple-text .apple-logo img{
-        width: 20px;
-    }
-    .apple .apple-text .apple-logo p {
-        font-weight: lighter;
-        font-size: 12px;
-    }
-    .apple .apple-text h1 {
-        padding-top: 10px;
-        padding-bottom: 20px;
-        line-height: 35px;
-        font-size: 24px;
-    }
-    .apple .apple-text a {
-        font-size: 12px;
-    }
-     .apple .apple-text i {
-        font-size: 10px;
-    }
-    .apple .img img {
-        width: 273px;
-        padding-top: 20px;
-    }
-}
-
-@media (max-width: 575px) {
     .apple {
         margin: 0px;
         justify-content: center;
+        overflow: hidden;
     }
     .apple .apple-text .apple-logo {
         width: 150px;
@@ -696,4 +903,20 @@ body{
     .apple .apple-text a {
         font-size: 14px;
     }
+    .section1{
+        padding: 20px 10px;
+    }
+    .section1 .flash .time {
+        gap: 6px
+    }
+    .section1 .flash .time .times h2 {
+        padding-left: 7px;
+    }
+    .card-section{
+        padding: 10px;
+        gap: 20px;
+    }
+    .card-section .card .upper .image img {
+        max-width: 45%;
+    }    
 }
