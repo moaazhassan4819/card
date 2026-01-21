@@ -677,11 +677,8 @@ body{
 
 @media (max-width: 575px) {
     .apple {
-        margin: 20px 40px 20px 40px;
+        margin: 0px;
         justify-content: center;
-    }
-    .apple .apple-text{
-        padding: 20px 0px 20px 0px;
     }
     .apple .apple-text .apple-logo {
         width: 150px;
