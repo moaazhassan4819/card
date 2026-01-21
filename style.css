@@ -256,12 +256,11 @@ body{
 
 .section1 .flash .time{
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
-    gap: 50px;
-    position: relative;
-    right: 250px;
-    bottom: 5px;
+    gap: 30px;
+    margin-right: auto;
+    margin-left: 80px;
 }
 
 .section1 .flash .time .times p{
@@ -806,10 +805,18 @@ body{
         padding-top: 20px;
     }
     .section1{
-            padding: 100px 30px 100px 30px;
+            padding: 0px 20px;
     }
     .section1 .flash .heading h2 {
         font-size: 22px;
+    }
+    .section1 .flash {
+        justify-content: flex-start;
+        gap: 20px;
+    }
+    .section1 .flash .time {
+        margin-left: 0;
+        gap: 15px;
     }
     .section1 .flash .time .times p {
         font-size: 10px;
@@ -919,4 +926,8 @@ body{
     .card-section .card .upper .image img {
         max-width: 45%;
     }    
+}
+
+@media screen and (max-width: 350px){
+
 }
