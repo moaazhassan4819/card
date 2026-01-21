@@ -531,3 +531,172 @@ body{
 }
 
 
+/* =============================================/==================================================== */
+
+.apple{
+    margin: 40px 150px 90px 150px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.apple .apple-text{
+    padding: 40px 0px 40px 40px;
+    color: white;
+}
+
+.apple .apple-text .apple-logo{
+    width: 210px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.apple .apple-text .apple-logo p{
+    font-weight: 500;
+    font-size: 18px;
+    padding-top: 7px;
+}
+
+.apple .apple-text h1{
+    padding: 30px 0px;
+    line-height: 60px;
+    font-size: 45px;
+    letter-spacing: 4%;
+}
+
+.apple .apple-text a{
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: all 0.4s ease-in-out;
+    text-align: center;
+}
+
+.apple .apple-text a:hover{
+    color: #00B8D9;
+}
+
+.apple .img img{
+    width: 470px;
+    padding: 20px;
+}
+
+/* ======================================================================================= */
+
+@media screen and (max-width: 1660px){
+    .apple {
+    margin: 40px 120px 90px 120px;
+}
+}
+
+@media screen and (max-width: 1399px){
+   .apple .img img {
+        width: 420px;
+   }
+}
+
+@media (max-width: 1199px) {
+    .apple {
+        margin: 40px 100px 90px 100px;
+    }
+    .apple .apple-text h1 {
+        padding: 20px 0px;
+        line-height: 50px;
+        font-size: 40px;
+    }
+    .apple .img img {
+        width: 380px;
+    }
+}
+
+@media (max-width: 991px) {
+    .apple {
+        margin: 40px 60px 90px 60px;
+    }
+    .apple .apple-text .apple-logo {
+        width: 150px;
+    }
+    .apple .apple-text .apple-logo img{
+        width: 30px;
+    }
+    .apple .apple-text .apple-logo p {
+        font-weight: 400;
+        font-size: 14px;
+    }
+    .apple .apple-text h1 {
+        line-height: 40px;
+        font-size: 32px;
+    }
+    .apple .img img {
+        width: 340px;
+    }
+    .apple .apple-text a {
+        font-size: 16px;
+    }
+     .apple .apple-text i {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 767px) {
+    .apple .apple-text{
+        padding: 20px 0px 20px 20px;
+        color: white;
+    }
+    .apple .apple-text .apple-logo {
+        width: 120px;
+    }
+    .apple .apple-text .apple-logo img{
+        width: 20px;
+    }
+    .apple .apple-text .apple-logo p {
+        font-weight: lighter;
+        font-size: 12px;
+    }
+    .apple .apple-text h1 {
+        padding-top: 10px;
+        padding-bottom: 20px;
+        line-height: 35px;
+        font-size: 24px;
+    }
+    .apple .apple-text a {
+        font-size: 12px;
+    }
+     .apple .apple-text i {
+        font-size: 10px;
+    }
+    .apple .img img {
+        width: 273px;
+        padding-top: 20px;
+    }
+}
+
+@media (max-width: 575px) {
+    .apple {
+        margin: 20px 40px 20px 40px;
+        justify-content: center;
+    }
+    .apple .apple-text{
+        padding: 20px 0px 20px 0px;
+    }
+    .apple .apple-text .apple-logo {
+        width: 150px;
+    }
+    .apple .apple-text .apple-logo img {
+        width: 30px;
+    }
+    .apple .apple-text .apple-logo p {
+        font-weight: 500;
+        font-size: 14px;
+    }
+    .apple .apple-text h1 {
+        font-size: 30px;
+    }
+    .apple .apple-text a {
+        font-size: 14px;
+    }
+}
