@@ -219,7 +219,7 @@ body{
 /* ================================================================================================== */
 
 .section1{
-    padding: 0px 90px;
+    padding: 60px 90px;
 }
 
 .section1 .today{
@@ -510,7 +510,7 @@ body{
     gap: 30px;
     align-items: center;
     flex-wrap: wrap;
-    height: 255px;
+    height: 200px;
     padding: 0px 90px;
     margin: 50px 0px;
 }
@@ -908,7 +908,7 @@ body{
     .section1 .flash .time .times h2 {
         font-size: 18px;
     }
-        .section1 .flash .arrow i {
+    .section1 .flash .arrow i {
         font-size: 10px;
     }
     .card-section {
@@ -933,12 +933,12 @@ body{
     }
     .cards{
         padding: 0px 30px;
-        height: 150px;
-        gap: 20px;
+        height: 115px;
+        gap: 10px;
         margin-top: 40px;
     }
     .cards .card{
-        width: calc((100% - 40px) / 3);
+        width: calc((100% - 30px) / 4);
     }
 }
 
@@ -1036,9 +1036,25 @@ body{
         padding-top: 5px;
         font-size: 10px;
     }
+    .card-section .card .upper .discount {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
 }
 
 @media screen and (max-width: 320px){
+    .section1 .flash .time .times h2 {
+        padding-left: 12px;
+    }
+    .card-section .card .upper .discount {
+        padding: 5px 8px;
+        font-size: 10px;
+    }
+    .card-section .card .upper .icons i {
+        width: 20px;
+        height: 20px;
+        font-size: 12px;
+    }
     .cards{
         height: 80px;
         gap: 15px;
